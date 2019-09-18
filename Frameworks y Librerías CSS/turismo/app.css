@@ -1,0 +1,47 @@
+body{
+    background: url(imgs/body_background.jpg);
+    background-size: cover;
+}
+
+.row {
+    margin-bottom: 0 !important;
+}
+
+.container--head-logo img.medium{
+    width: 30%;
+}
+
+.container--head-logo img.large{
+    width: 100%;
+}
+
+.social li{
+    margin-bottom: 0.5rem;
+}
+
+.gallery img {
+    width: 100%
+}
+
+.entrada {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.entrada img{
+    width: 48%;
+    margin-right: 15px !important;
+}
+
+.autor{
+    background: #fff;
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.autor img{
+    width:86px;
+    margin-top: 10px;
+}

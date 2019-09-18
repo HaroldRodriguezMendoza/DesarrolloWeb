@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Blog de Música</title>
+
+    <style>
+
+        body{
+            background: #efefef;
+        }
+
+        .logo img{
+            margin-top: 1rem;
+        }
+
+        .container {
+            background: #fff;
+            border: 1px solid lightgray;
+        }
+
+        .fab{
+            margin-left: -14px;
+        }
+        
+        .fa-twitter-square{
+            color: #38A1F3;
+        }
+
+        .fa-instagram{
+            color: #c32aa3;
+        }
+
+        .fa-youtube-square{
+            color: #ED3833;
+        }
+
+        .fa-facebook-square {
+            color: #4267b2;
+        }
+        .navigation{
+            margin-top:1rem;
+        }
+
+        article {
+            margin-top: 1rem;
+        }
+
+        .comentarios{
+            margin-top: 0.625rem;
+        }
+
+        .search-box {
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 576px){
+
+            .logo{
+                text-align: center;
+            }
+
+            .social{
+                margin-top:0.625rem;
+            }
+
+            .social-icons{
+                justify-content: center !important;
+            }
+
+            .fab{
+                margin-left: -7px;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width:767px) {
+            .nav a{
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <br>
+    <div class="container">
+        
+        <!-- Cabeza de Página -->
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-4 logo align-items-start">
+                <img src="imgs/logo.png" alt="Logo">
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-4 align-self-end social">
+                <div class="row justify-content-end social-icons">
+                    <div class="col-1"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+                    <div class="col-1"><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></div>
+                    <div class="col-1"><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a></div>
+                    <div class="col-1"><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="row navigation" style="background-color: #e3f2fd;">
+            <div class="col">
+                <ul class="nav nav-justified flex-column flex-sm-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top 10</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrevistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conciertos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Radio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contendio -->
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+                <article>
+                    <div class="row align-items-center">
+                        <div class="div col-lg-8 col-xl-9">
+                            <h1>Historia de Maná</h1>
+                            <p class="lead">Sombrero Verde</p>
+                            <p>Los orígenes de Maná se remontan a un grupo musical llamado Sombrero Verde, cuyos integrantes Fher Olvera, como voz, Gustavo Orozco, a la guitarra eléctrica, y los hermanos Calleros, Juan, al bajo, Ulises, a la guitarra eléctrica y Abraham, a la batería, eran originarios de Guadalajara. En un inicio tocaban en bares. En 1980 decidieron juntarse para tocar distintos temas de grupos a los que admiraban, entre ellos The Beatles, Led Zeppelin, The Police, The Rolling Stones, entre otros. Inicialmente, se hacían llamar The Green Hat Spies, pero pronto el nombre se abrevió a Green Hat y, finalmente, se adaptó al español como Sombrero Verde, ya que la banda deseaba tocar rock en su propio idioma, siendo de los primeros grupos en aventurarse a componer sus propias canciones aún cuando el rock en español no era una tendencia.</p>
+                        </div>
+                        <div class="div col-lg-4 col-xl-3">
+                            <img src="imgs/mana.jpg" alt="Grupo Maná" class="img-fluid d-none d-lg-block">
+                            <img src="imgs/mana2.jpg" alt="Grupo Maná" class="img-fluid d-lg-none">
+                        </div>
+                    </div>
+                    <div class="row comentarios">
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="far fa-comment"></i></span>
+                                </div>
+                                <textarea class="form-control" aria-label="With textarea" placeholder="Comentarios..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+                <hr>
+                <article>
+                    <div class="row align-items-center">
+                        <div class="div col-lg-8 col-xl-9">
+                            <h1>Bon Jovi</h1>
+                            <p class="lead">Formación y primeros trabajos</p>
+                            <p>John Bongiovi y David Raschbaum se conocieron en el instituto superior de Sayreville, Nueva Jersey. Los dos solían ensayar juntos después de clase y en 1978 se unieron a la banda escolar Atlantic City Expressway, una ambiciosa banda de rythm & blues en la que interpretaban covers de otros artistas. Comenzaron actuando en bailes escolares y algunos bares locales, pero pronto se forjaron una gran reputación en los clubes de South Jersey. A finales de 1979, David se marchó a estudiar a la prestigiosa Juilliard School of Music de Nueva York, mientras que Jon se unió a la banda The Rest, que le dio la oportunidad de escribir y tocar sus propias canciones, en este caso más orientadas al hard rock. Uno de esos temas fue «Shot Through The Heart», co-escrito junto a su compañero de banda Jack Ponti, y que años después formaría parte del primer álbum de Bon Jovi. El mayor logro de The Rest fue telonear a Hall & Oates en Freehold Raceway, Nueva Jersey, con un aforo de 20 000 espectadores. Sin embargo, frustrado por la falta de interés de las discográficas, Jack Ponti decidió disolver el grupo, dejando a Jon en la estacada.</p>
+                        </div>
+                        <div class="div col-lg-4 col-xl-3">
+                            <img src="imgs/bonjovi.jpg" alt="Grupo Maná" class="img-fluid d-none d-lg-block">
+                            <img src="imgs/bonjovi2.jpg" alt="Grupo Maná" class="img-fluid d-lg-none">
+                        </div>
+                    </div>
+                    <div class="row comentarios">
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="far fa-comment"></i></span>
+                                </div>
+                                <textarea class="form-control" aria-label="With textarea" placeholder="Comentarios..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="row">
+                    <div class="col search-box">
+                        <div class="input-group input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing" placeholder="Buscar...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
