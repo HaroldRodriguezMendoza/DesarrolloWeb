@@ -52,6 +52,12 @@ img {
   margin-right: auto;
 }
 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .secundaria {
   margin: 0px;
   background: #d5c75f;

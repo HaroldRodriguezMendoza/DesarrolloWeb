@@ -1,0 +1,4 @@
+{"_id":"ENTREGA EJERCICIOS","title":"NTREGA EJERCICIOS","start":"2019-09-26","end":"Invalid da","start_hour":"2019-09-26","end_hour":"e","fk_usuario":"hrodrimendoza@gmail.com"}
+{"_id":"NTREGA EJERCICIOS 2","start":"2019-09-26","end":"2019-09-26","end_hour":"10:00:00","start_hour":"11:00:00","allDay":1.0,"title":"ENTREGA EJERCICIOS 2"}
+{"_id":"Examen NEXT UNIVERSITY","title":"Examen NEXT UNIVERSITY ","start":"2019-09-27","end":"2019-09-30","start_hour":"2019-09-27","end_hour":"07:30:00","fk_usuario":"hrodrimendoza@gmail.com"}
+{"_id":"EMPIEZA","title":"EMPIEZA","start":"2019-09-28","end":"","start_hour":null,"end_hour":null,"fk_usuario":"hrodrimendoza@gmail.com"}
