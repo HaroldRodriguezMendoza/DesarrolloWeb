@@ -1,14 +1,15 @@
 <?php
-require_once('bdd.php');
-
 session_start();
-$usuarioID=$_SESSION['id'];
 
-$sql = "SELECT id, titulo, concat(DATE(fechainicio),' ',horainicio) as 'start', concat(DATE(fechafin),' ',horafin) as 'end'  FROM evento  where idusuario='$usuarioID'";
+include_once 'connection.php';
+$conn = new ConectorBD('localhost', 'root', '');
+$conn->initConexion('agendadb');
 
-$req = $bdd->prepare($sql);
-$req->execute();
+$eventos = $conn->obtenerEventos($_SESSION['id_usuario']);
 
-$events = $req->fetchAll();
-echo json_encode($events);
-?>
+if(count($eventos) > 0) {
+    echo json_encode((object)array("msg" => "OK", "eventos" => $eventos));
+} else {
+    echo json_encode((object)array("msg"=>"No hay eventos aún creados"));
+} 
+ ?>

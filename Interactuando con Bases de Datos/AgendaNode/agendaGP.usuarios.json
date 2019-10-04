@@ -1,6 +1,0 @@
-{ 
-    "_id" : ObjectId("5a9442c21d079714d8e35431"), 
-    "email" : "hrodrimendoza@gmail.com", 
-    "nombre" : "Harold Keizo Rodriguez Mendoza", 
-    "password" : "123456"
-}

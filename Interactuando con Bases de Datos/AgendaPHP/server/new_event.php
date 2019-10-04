@@ -1,32 +1,27 @@
 <?php
+  
+session_start();
+include_once 'connection.php';
+$conn = new ConectorBD('localhost', 'root', '');
+$conn->initConexion('agendadb');
 
-// Connexion à la base de données
-require_once('bdd.php');
-if (isset($_POST['titulo']) && isset($_POST['start_date']) && isset($_POST['end_date']) && isset($_POST['start_hour'])&& isset($_POST['end_hour'])){
+$titulo_evt = $_POST['titulo'];
+$fecha_inicio_evt = $_POST['start_date'];
+$hora_inicio_evt = $_POST['start_hour'];
+$fecha_fin_evt = $_POST['end_date'];
+$hora_fin_evt = $_POST['end_hour'];
+$todo_dia_evt = $_POST['allDay'] === 'true' ? 1 : 0;
 
-	$titulo = $_POST['titulo'];
-	$start = $_POST['start_date'];
-	$end = $_POST['end_date'];
-  $horainicio = $_POST['start_hour'];
-	$horafin = $_POST['end_hour'];
-	session_start();
-	$usuarioID=$_SESSION['id'];
-	$sql = "INSERT INTO evento(titulo, fechainicio,horainicio, fechafin,horafin,idusuario) values ('$titulo', '$start','$horainicio', '$end','$horafin', '$usuarioID')";
-	echo "OK";
+$id_usuario = $_SESSION['id_usuario'];
 
-  $query = $bdd->prepare( $sql );
-	if ($query == false) {
-	 print_r($bdd->errorInfo());
-	 die ('Error prepare');
-	}
-	$sth = $query->execute();
-	if ($sth == false) {
-	 print_r($query->errorInfo());
-	 die ('Error execute');
-	}
-
+if($fecha_fin_evt === ''){
+    $fecha_fin_evt = $fecha_inicio_evt;
+    $hora_inicio_evt = '00:00';
+    $hora_fin_evt = '23:59';
 }
 
+$id_evento = $conn->crearEvento($titulo_evt, $fecha_inicio_evt, $hora_inicio_evt, $fecha_fin_evt, $hora_fin_evt, $todo_dia_evt, $id_usuario);
 
+echo json_encode((object)array("msg" => "OK", "id_evento" => $id_evento));
 
-?>
+ ?>

@@ -1,26 +1,13 @@
 <?php
-require_once('bdd.php');
-if (isset($_POST['id'])){
+
+include_once 'connection.php';
+$conn = new ConectorBD('localhost', 'root', '');
+$conn->initConexion('agendadb');
+
 $id = $_POST['id'];
 
-	$sql = "DELETE FROM evento WHERE id = $id";
+$conn->eliminarEvento($id);
 
-	echo "OK";
+echo json_encode((object)array("msg" => "OK"));
 
-	$query = $bdd->prepare( $sql );
-	if ($query == false) {
-	 print_r($bdd->errorInfo());
-	 die ('Error prepare');
-	}
-	$sth = $query->execute();
-	if ($sth == false) {
-	 print_r($query->errorInfo());
-	 die ('Error execute');
-	}
-
-}
-
-
-
-
-?>
+ ?>

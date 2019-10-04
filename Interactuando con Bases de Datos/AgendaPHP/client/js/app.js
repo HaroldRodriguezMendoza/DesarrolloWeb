@@ -2,7 +2,7 @@ class EventsManager {
     constructor() {
         this.obtenerDataInicial()
     }
- 
+
 
     obtenerDataInicial() {
         let url = '../server/getEvents.php'
@@ -14,12 +14,15 @@ class EventsManager {
           contentType: false,
           type: 'GET',
           success: (data) =>{
-
-              this.poblarCalendario(data)
-
+            if (data.msg=="OK") {
+              this.poblarCalendario(data.eventos)
+            }else {
+              alert(data.msg)
+              window.location.href = 'index.html';
+            }
           },
           error: function(){
-            window.location.href = 'index.html';
+            alert("error en la comunicación con el servidor");
           }
         })
 
@@ -32,7 +35,7 @@ class EventsManager {
         		center: 'title',
         		right: 'month,agendaWeek,basicDay'
         	},
-        	defaultDate: '2017-09-01',
+        	defaultDate: '2016-11-01',
         	navLinks: true,
         	editable: true,
         	eventLimit: true,
@@ -80,16 +83,14 @@ class EventsManager {
       }
       $.ajax({
         url: '../server/new_event.php',
-        dataType: "text",
+        dataType: "json",
         cache: false,
         processData: false,
         contentType: false,
         data: form_data,
         type: 'POST',
         success: (data) =>{
-
-
-          if (data=="OK") {
+          if (data.msg=="OK") {
             alert('Se ha añadido el evento exitosamente')
             if (document.getElementById('allDay').checked) {
               $('.calendario').fullCalendar('renderEvent', {
@@ -110,7 +111,7 @@ class EventsManager {
 
 
           }else {
-            alert(data)
+            alert(data.msg)
           }
         },
         error: function(){
@@ -126,18 +127,17 @@ class EventsManager {
       form_data.append('id', event.id)
       $.ajax({
         url: '../server/delete_event.php',
-        dataType: "text",
+        dataType: "json",
         cache: false,
         processData: false,
         contentType: false,
         data: form_data,
         type: 'POST',
         success: (data) =>{
-
-          if (data=="OK") {
+          if (data.msg=="OK") {
             alert('Se ha eliminado el evento exitosamente')
           }else {
-            alert(data)
+            alert(data.msg)
           }
         },
         error: function(){
@@ -172,17 +172,17 @@ class EventsManager {
 
         $.ajax({
           url: '../server/update_event.php',
-          dataType: "text",
+          dataType: "json",
           cache: false,
           processData: false,
           contentType: false,
           data: form_data,
           type: 'POST',
           success: (data) =>{
-            if (data=="OK") {
+            if (data.msg=="OK") {
               alert('Se ha actualizado el evento exitosamente')
             }else {
-              alert(data)
+              alert(data.msg)
             }
           },
           error: function(){
@@ -194,7 +194,6 @@ class EventsManager {
 }
 
 
-
 $(function(){
   initForm();
   var e = new EventsManager();
@@ -202,28 +201,7 @@ $(function(){
     event.preventDefault()
     e.anadirEvento()
   })
-  $('#logout').click(function(){
-    let url = '../server/logout.php'
-    $.ajax({
-      url: url,
-      dataType: "text",
-      cache: false,
-      processData: false,
-      contentType: false,
-      type: 'GET',
-      success: (data) =>{
-
-            window.location.href = 'main.html';
-
-      },
-      error: function(){
-        window.location.href = 'index.html';
-      }
-    })
-
-  })
 });
-
 
 
 

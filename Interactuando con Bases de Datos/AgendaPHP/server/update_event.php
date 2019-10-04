@@ -1,27 +1,17 @@
 <?php
-require_once('bdd.php');
 
-if (isset($_POST['id']) && isset($_POST['start_date']) && isset($_POST['end_date']) && isset($_POST['start_hour'])&& isset($_POST['end_hour'])){
-$id = $_POST['id'];
+include_once 'connection.php';
+$conn = new ConectorBD('localhost', 'root', '');
+$conn->initConexion('agendadb');
 
-	$start = $_POST['start_date'];
-	$end = $_POST['end_date'];
-  	$horainicio = $_POST['start_hour'];
-	$horafin = $_POST['end_hour'];
+$id_evento = $_POST['id'];
+$fecha_inicio_evt = $_POST['start_date'];
+$hora_inicio_evt = $_POST['start_hour'];
+$fecha_fin_evt = $_POST['end_date'];
+$hora_fin_evt = $_POST['end_hour'];
 
-	$sql = "update  evento  set fechainicio='$start',fechafin='$end',horafin='$horafin'  where id='$id'";
+$conn->actualizarEvento($id_evento, $fecha_inicio_evt, $hora_inicio_evt, $fecha_fin_evt, $hora_fin_evt);
 
-	echo "OK";
+echo json_encode((object)array("msg" => "OK"));
 
-  $query = $bdd->prepare( $sql );
-	if ($query == false) {
-	 print_r($bdd->errorInfo());
-	 die ('Erreur prepare');
-	}
-	$sth = $query->execute();
-	if ($sth == false) {
-	 print_r($query->errorInfo());
-	 die ('Erreur execute');
-	}
-}
-?>
+ ?>
