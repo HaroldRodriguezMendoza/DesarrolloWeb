@@ -1,9 +1,7 @@
 const EXPRESS = require('express');
 const mongojs = require('mongojs');
 var db = mongojs('mongodb://localhost:27017/agendadb', ['users']);
-
 let router = EXPRESS.Router();
-
 router.post('/usuarios', (req, res, next) => {
     db.users.findOne({
         user: req.body.user,
@@ -19,12 +17,8 @@ router.post('/usuarios', (req, res, next) => {
                     validado: true
                 });
             } else {
-                res.json({
-                    validado: false
-                });
             }
         }
     });
 }); 
-
 module.exports = router;

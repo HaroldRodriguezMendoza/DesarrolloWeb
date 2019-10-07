@@ -2,11 +2,8 @@ const EXPRESS = require('express');
 const mongojs = require('mongojs');
 const MONGOOSE = require('mongoose');
 var Event = require('../models/event');
-
 var db = mongojs('mongodb://localhost:27017/agendadb', ['events']);
-
 let router = EXPRESS.Router();
-
 router.get('/events', (req, res, next) => {
     db.events.find((err, events) => {
         if (err) {
@@ -16,7 +13,6 @@ router.get('/events', (req, res, next) => {
         }
     });
 });
-
 router.post('/events', (req, res, next) => {
     const _ID = new MONGOOSE.Types.ObjectId();
     let nuevoEvento = new Event({
@@ -26,7 +22,6 @@ router.post('/events', (req, res, next) => {
         start: req.body.start,
         end: req.body.end
     }); 
-
     db.events.save(nuevoEvento, (err, resultado) => {
         if(err) {
             res.send(err);
@@ -35,7 +30,6 @@ router.post('/events', (req, res, next) => {
         }
     });
 });
-
 router.put('/events/:id', (req, res, next) => {
     db.events.update({
         _id: mongojs.ObjectId(req.params.id)
@@ -47,7 +41,6 @@ router.put('/events/:id', (req, res, next) => {
         }
     });
 });
-
 router.delete('/events/:id', (req, res, next) => {
     db.events.remove({
         _id: mongojs.ObjectId(req.params.id)
@@ -59,5 +52,4 @@ router.delete('/events/:id', (req, res, next) => {
         }
     })
 });
-
 module.exports = router;

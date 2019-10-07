@@ -57,6 +57,11 @@ class ConectorBD
         return mysqli_num_rows($this->ejecutarQuery($sql)) > 0;
     }
 
+    function datosUsuario($correo_usr){
+      $sql="SELECT * FROM usuario WHERE correo_usr='".$correo_usr."'";
+      return $this->ejecutarQuery($sql);
+    }
+
     function crearUsuarios(){
         $stmt = $this->conexion->prepare('INSERT INTO USUARIO (correo_usr, password_usr, nombre_completo_usr, fecha_nacimiento_usr) VALUES (?, ?, ?, ?)');
         $correo_usr = 'hrodrimendoza@gmail.com';
@@ -156,6 +161,7 @@ class ConectorBD
     {
         return $this->conexion;
     }
+
 }
 
 

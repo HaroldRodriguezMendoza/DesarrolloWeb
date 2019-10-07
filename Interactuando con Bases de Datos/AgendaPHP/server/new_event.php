@@ -1,27 +1,29 @@
 <?php
-  
 session_start();
-include_once 'connection.php';
-$conn = new ConectorBD('localhost', 'root', '');
-$conn->initConexion('agendadb');
-
-$titulo_evt = $_POST['titulo'];
-$fecha_inicio_evt = $_POST['start_date'];
-$hora_inicio_evt = $_POST['start_hour'];
-$fecha_fin_evt = $_POST['end_date'];
-$hora_fin_evt = $_POST['end_hour'];
-$todo_dia_evt = $_POST['allDay'] === 'true' ? 1 : 0;
-
-$id_usuario = $_SESSION['id_usuario'];
-
-if($fecha_fin_evt === ''){
-    $fecha_fin_evt = $fecha_inicio_evt;
-    $hora_inicio_evt = '00:00';
-    $hora_fin_evt = '23:59';
+require('../server/lib.php');
+$titulo_evt=$_POST['titulo_evt'];
+$fecha_inicio_evt=$_POST['fecha_inicio_evt'];
+$hora_inicio_evt=$_POST['hora_inicio_evt'];
+$fecha_fin_evt=$_POST['fecha_fin_evt'];
+$hora_fin_evt=$_POST['hora_fin_evt'];
+$todo_dia_evt=$_POST['todo_dia_evt'];
+$id_usuario=$_POST['id_usuario'];
+$con = new ConectorBD();
+if ($con->initConexion()=='OK'){
+	$datos['id_usuario'] = "'".$_SESSION['id']."'";
+	$datos['title'] = "'".$title."'";
+    $datos['fecha_inicio_evt'] = "'".$fecha_inicio_evt."'";
+    $datos['fecha_fin_evt'] = "'".$fecha_fin_evt."'";
+    $datos['hora_fin_evt'] = "'".$hora_fin_evt."'";
+    $datos['todo_dia_evt'] = "'".$todo_dia_evt."'";
+    if ($con->crearEvento('eventos', $datos)) {
+      	$php_response=array("msg"=>"OK","data"=>"2");  
+    }else{
+    	$php_response=array("msg"=>"Error la registrar los datos","data"=>"2"); 
+    }
+    echo json_encode($php_response,JSON_FORCE_OBJECT);
+    $con->cerrarConexion();
+}else {
+    echo "Se presentó un error en la conexión";
 }
-
-$id_evento = $conn->crearEvento($titulo_evt, $fecha_inicio_evt, $hora_inicio_evt, $fecha_fin_evt, $hora_fin_evt, $todo_dia_evt, $id_usuario);
-
-echo json_encode((object)array("msg" => "OK", "id_evento" => $id_evento));
-
- ?>
+?>
