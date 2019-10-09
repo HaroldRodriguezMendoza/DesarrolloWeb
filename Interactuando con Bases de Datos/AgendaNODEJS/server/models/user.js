@@ -5,4 +5,4 @@ var schUser = new Schema({
     password: {type: String, required: true}
 });
 var User = MONGOOSE.model('User', schUser);
-module.exports = User;
+module.exports = User; 

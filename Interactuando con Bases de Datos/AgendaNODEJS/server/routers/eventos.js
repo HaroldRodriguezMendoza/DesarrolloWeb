@@ -20,7 +20,7 @@ router.post('/events', (req, res, next) => {
         id: _ID,
         title: req.body.title,
         start: req.body.start,
-        end: req.body.end
+        end: req.body.end 
     }); 
     db.events.save(nuevoEvento, (err, resultado) => {
         if(err) {

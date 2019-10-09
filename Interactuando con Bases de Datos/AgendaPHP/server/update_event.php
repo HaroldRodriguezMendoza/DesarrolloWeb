@@ -1,22 +1,21 @@
 <?php
-session_start();
-require('../server/lib.php');
-$con = new ConectorBD();
-if ($con->initConexion()=='OK'){
-    $idevento=$_POST["id_evento"];
-    $fecha_inicio_evt=$_POST['fecha_inicio_evt'];
-    $hora_inicio_evt=$_POST['hora_inicio_evt'];
-    $fecha_fin_evt=$_POST['fecha_fin_evt'];
-    $hora_fin_evt=$_POST['hora_fin_evt'];
-    $todo_dia_evt=$_POST['todo_dia_evt'];
-    if($con->actualizarEvento($idevento,$datos)){
-    	$php_response=array("msg"=>"OK","evento actualizado"=>$idevento);  
-    }else{
-    	$php_response=array("msg"=>"Error al actualizar el evento","eventos"=>$idevento); 
+  require('conector.php');
+  $con = new ConectorBD();
+  if ($con->initConexion('bdagenda')=='OK') {
+    $data['id'] = '"'.$_POST['id'].'"';
+    $data['titulo'] = '"'.$_POST['titulo'].'"';
+    $data['fecha_inicio_evt'] = '"'.$_POST['fecha_inicio_evt'].'"';
+    $data['fecha_fin_evt'] = '"'.$_POST['fecha_fin_evt'].'"';
+    $data['hora_fin_evt'] = '"'.$_POST['hora_fin_evt'].'"';
+    $data['todo_dia_evt'] = '"'.$_POST['todo_dia_evt'].'"';
+    if ($con->actualizarRegistro('eventos', $data, 'id ='.$data['id'])) {
+      echo "Se han actualizado los datos correctamente";
     }
-	echo json_encode($php_response,JSON_FORCE_OBJECT);
+    else{
+    } echo "Se ha producido un error en la actualización";
     $con->cerrarConexion();
-}else {
+  }
+  else {
     echo "Se presentó un error en la conexión";
-}
-?>
+  }
+ ?>

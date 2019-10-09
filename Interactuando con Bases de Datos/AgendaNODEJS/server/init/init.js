@@ -9,5 +9,5 @@ module.exports = () => {
         } else {
             console.log('Base de datos inicializada.');
         }
-    }); 
+    });  
 };

@@ -1,20 +1,35 @@
 <?php
-  	require_once('conector.php');
-  	$datos = array(
-      'nombre' => 'Harold Rodriguez',
-      'email' => 'hrodrimendoza@gmail.com',
-      'clave' => password_hash("Usr2k15", PASSWORD_DEFAULT),
-      'nacimiento' => '1969-05-20');
-    $con = new ConectorBD('localhost','root','');
-  	$respuesta = $con->initConexion('agendadb');
-  	if ($respuesta == 'OK') {
-    	if($con->insertData('usuario', $datos)){
-      		$respuesta = "Se registro nuevo usuario";
-	    }else {
-	      	$respuesta = "Hubo un error y los datos no han sido cargados";
-	    }
-  	}else {
-    	$respuesta = "No se pudo conectar a la base de datos";
-  	}
+  require('conector.php');
+  $con = new ConectorBD();
+  if ($con->initConexion('bdagenda')=='OK') {
+    $conexion = $con->getConexion();
+
+    $insert = $conexion->prepare('INSERT INTO usuario (id_usuario, nombres, password, email, fecha_nacimiento) VALUES (?,?,?,?,?)');
+    $insert->bind_param("isssi", $id_usuario, $nombres, $password, $email, $fecha_nacimiento);
+
+    $id_usuario = 1;
+    $nombres = 'Harold Keizo Rodriguez Mendoza';
+    $password = '123456';
+    $email = 'hrodrimendoza@gmail.com';
+    $fecha_nacimiento = '27-07-1997';
+    $insert->execute();
+
+    $id_usuario = 2;
+    $nombres = 'Hector Rodriguez';
+    $password = '123456';
+    $email = 'hrodriguez@gmail.com';
+    $fecha_nacimiento = '30-07-1997';
+    $insert->execute();
+
+    echo "Se insertaron los registros exitosamente";
+
     $con->cerrarConexion();
-?>
+
+  }else {
+    echo "Se presentó un error en la conexión";
+  }
+
+
+
+
+ ?>

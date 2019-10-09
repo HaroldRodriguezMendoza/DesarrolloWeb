@@ -11,7 +11,7 @@ router.post('/usuarios', (req, res, next) => {
             res.json({
                 validado: false
             });
-        } else {
+        } else { 
             if(user !== null) {
                 res.json({
                     validado: true

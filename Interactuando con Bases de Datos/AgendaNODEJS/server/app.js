@@ -13,7 +13,7 @@ app.use(BODY_PARSER.urlencoded({
 }));
 app.use('/', EXPRESS.static(PATH.join(__dirname, '../client')));
 app.use('/users/', USUARIOS);
-app.use('/events/', EVENTOS);
+app.use('/events/', EVENTOS); 
 app.listen(PORT, ()=>{
     console.log('Listening at port ' + PORT);
 }); 

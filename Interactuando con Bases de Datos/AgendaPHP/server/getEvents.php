@@ -1,17 +1,13 @@
 <?php
-session_start();
-require('../server/connection.php');
-$con = new ConectorBD();
-if ($con->initConexion()=='CORRECTO'){
-    $resul=$con->obtenerEventos($_SESSION['id_usuario']);
-    $rows = array();
-	while($r = mysqli_fetch_assoc($resul)) {
-	    $rows[] = $r;
-	}
-	$php_response=array("msg"=>"OK","eventos"=>$rows);   
-	echo json_encode($php_response);
-    $con->cerrarConexion();
-}else {
+  require('conector.php');
+  $con = new ConectorBD();
+  if ($con->initConexion('bdagenda')=='OK') {
+    if ($con->consultar(['eventos'], ['*'],"WHERE fk_usuarios ='".$_SESSION['email']."'",'')) {
+      echo "Se consultaron los registros exitosamente";
+    }else {
+    	echo "Hubo un problema y los registros no fueron consultados";
+  }
+  else {
     echo "Se presentó un error en la conexión";
-}
-?>
+  }
+ ?>

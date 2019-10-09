@@ -11,4 +11,4 @@ let mongoose = require('mongoose'),
 autoIncrement.initialize(connection) 
 EventSchema.plugin(autoIncrement.plugin, {model: 'Evento', startAt: 1} ); 
 let EventoModel = mongoose.model('Evento', EventSchema)
-module.exports = EventoModel
+module.exports = EventoModel 
