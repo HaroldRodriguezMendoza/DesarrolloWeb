@@ -1,0 +1,32 @@
+*********************** NodeJS *************************
+1.- Instalar Node.js
+2.- Verificar si esta corriendo NodeJS (Respuesta: v8.9.4)
+	node -v
+3.- Verificar si esta corriendo npm (Respuesta: v5.6.0)
+	npm -v
+4.- Crear un nuevo proyecto de NodeJS
+	mkdir server
+	npm init (Dentro de la carpeta contenedora)
+5.- Configurar datos del nuevo proyecto de NodeJS (Creará el archivo package.json)
+	name: (server) server
+	version: (1.0.0)
+	description: Proyecto - Servidor de Tienda Web
+	entry point: (index.js)
+	keywords: NodeJS MySQL
+	author: Harold Rodriguez Mendoza
+	license(ISC): MIT 
+6.- Instalar Dependencias
+	npm i -S express
+	npm i -S body-parser	(Analiza los cuerpos de solicitud entrantes en un middleware antes de sus manejadores, disponible bajo la propiedad req.body.)
+	npm i -S mysql		(Este es un controlador node.js para mysql. Está escrito en JavaScript, no requiere compilación y tiene una licencia 100% MIT.)
+	npm i -S express-jwt	(Este módulo le permite autenticar solicitudes HTTP usando tokens JWT en sus aplicaciones Node.js. Los JWT generalmente se usan para proteger los puntos finales API, y a menudo se emiten mediante OpenID Connect.)
+	npm i -S jsonwebtoken	(Esto fue desarrollado contra draft-ietf-oauth-json-web-token-08. Hace uso de node-jws)
+	npm i -S cors		(CORS es un paquete node.js para proporcionar un middleware Connect / Express que se puede usar para habilitar)
+	npm i -D nodemon 	(nodemon observará los archivos en el directorio en el que se inició nodemon, y si los archivos cambian, nodemon reiniciará automáticamente su aplicación de nodo.)
+7.- Abrir el archivo package.json y agregar la siguiente linea al campo "scripts"
+	"start": "nodemon index.js",
+8.- Ejuctar base de datos
+	Instalar XAMPP para obtener los servicios de MySQL. Puerto localhost:80
+9.- Abrir y correr Servidor XAMPP desde su panel de control
+10.- Correr Servidor NodeJS
+	node index.js (Para cerrar el servidor oprimimos la tecla "Ctrl+C")

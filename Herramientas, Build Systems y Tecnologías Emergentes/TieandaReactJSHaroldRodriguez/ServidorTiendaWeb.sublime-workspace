@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[ 
+				"fo",
+				"form\tTag"
+			],
+			[
+				"text-c",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"bg-i",
+				"bg-inverse \tBootstrap 4 Class"
+			],
+			[
+				"text-w",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"mt",
+				"mt-5 \tBootstrap 4 Class"
+			],
+			[
+				"ali",
+				"align-middle \tBootstrap 4 Class"
+			],
+			[
+				"bt",
+				"btn-block \tBootstrap 4 Class"
+			],
+			[
+				"jus",
+				"justify-content-end \tBootstrap 4 Class"
+			],
+			[
+				"col",
+				"col-12 \tBootstrap 4 Class"
+			],
+			[
+				"bot",
+				"margin-bottom"
+			],
+			[
+				"u",
+				"usuario"
+			],
+			[
+				"us",
+				"usuario"
+			],
+			[
+				"usu",
+				"usuario"
+			],
+			[
+				"re",
+				"reject"
+			],
+			[
+				"data",
+				"dataPath"
+			],
+			[
+				"da",
+				"dataType"
+			],
+			[
+				"bo",
+				"bodyParser"
+			],
+			[
+				"al",
+				"alumnos"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"cone",
+				"ConectorBD"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"s",
+				"substr"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"perso",
+				"personas"
+			],
+			[
+				"nomb",
+				"nombreID"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"g",
+				"getElementById"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"mos",
+				"mostrarClientes"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"l",
+				"label\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"d-",
+				"d-md-block"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"fon",
+				"font-size-adjust"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"text",
+				"text-white"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Proyectos_NodeJS/tienda/version_angular/server"
+	],
+	"file_history":
+	[
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/modelos/usuario.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/app.module.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/componentes/login/login.component.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/componentes/login/login.component.html",
+		"/C/Proyectos_NodeJS/tienda/version_angular/server/package.json",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/styles.css",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/app/models/Usuario.ts",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/styles.css",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/app/components/login/login.component.ts",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/app/app-routing.module.ts",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/app/components/login/login.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/componentes/header/header.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/componentes/main/main.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/app.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/app/componentes/barra-sup/barra-sup.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/componentes/footer/footer.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/index.html",
+		"/C/xampp/htdocs/ProyectosWEB/SitioWeb/css/estilo.css",
+		"/C/xampp/htdocs/ProyectosWEB/SitioWeb/includes/struct_footer.php",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/app.routes.ts",
+		"/C/Proyectos Angular/Otros/Tienda_Angular2_ReactJS-master/Tienda_Angular2_ReactJS-master/TiendaAngular2/src/app/app.component.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/app/componentes/inicio/inicio.component.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/app/app.module.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/app/app.component.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/app/app.routes.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/index.html",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda/src/app/app.component.ts",
+		"/C/Proyecto_Tienda/Evaluacion/version_angular/tienda2/src/index.html",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/app.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/vista/js/app.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/controlador/evento.js",
+		"/C/proyecto_tienda/TiendaOnlineAngularVersion-master/TiendaOnlineAngularVersion-master/src/app/barra-superior/barra-superior.component.css",
+		"/C/proyecto_tienda/TiendaOnlineAngularVersion-master/TiendaOnlineAngularVersion-master/README.md",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/rutasUsuarios.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/modelEventos.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/client/js/app.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/rutasEventos.js",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.232/app.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/vista/css/styles.css",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/vista/main.html",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/vista/js/index.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/modelo/evento.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/controlador/usuario.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/vista/index.html",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/controlador/crear_usuario.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/index.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/modelo/usuario.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/client/main.html",
+		"/D/Escritorio/Nueva carpeta/client/css/main.css",
+		"/D/Escritorio/Nueva carpeta/client/js/app.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/crud.js",
+		"/C/Proyectos_NodeJS/version_node/server/controlador/evento.js",
+		"/C/Proyectos_NodeJS/version_node/server/app.js",
+		"/C/Proyectos_NodeJS/version_node/server/modelo/evento.js",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/package1.json",
+		"/C/Proyectos_NodeJS/version_nodejs_agenda/package.json",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/index.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/client/css/styles.css",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/client/index.html",
+		"/C/Users/SERGIO/Downloads/jquery-3.2.1.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/server/modelUsuarios.js",
+		"/C/Proyectos_NodeJS/version_node/server/client/index.html",
+		"/C/Proyectos_NodeJS/version_node/server/package.json",
+		"/C/Proyectos_NodeJS/version_node/server/config.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master Funciona/agenda_nodejs/package.json",
+		"/C/Proyectos_NodeJS/version_node/server/index.js",
+		"/C/Proyectos_NodeJS/Node_js/server/index.js",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master/agenda_nodejs/server/index.js",
+		"/C/Proyectos_NodeJS/Node_js/package-lock.json",
+		"/C/Proyectos_NodeJS/Agenda_PHP_NodeJS-master/agenda_nodejs/package.json",
+		"/C/Proyectos_NodeJS/Node_js/package.json",
+		"/C/Proyectos_NodeJS/Node_js/server/model.js",
+		"/C/Proyectos_NodeJS/NodeJSVersion/package.json",
+		"/C/Proyectos_NodeJS/version_node/server/client/main.html",
+		"/C/Proyectos_NodeJS/NodeJSVersion/server/app.js",
+		"/C/Proyectos_NodeJS/NodeJSVersion/server/createUsers.js",
+		"/C/Proyectos_NodeJS/agenda_node_js/package.json",
+		"/C/Proyectos_NodeJS/agenda_node_js/agenda/package.json",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.053/package.json",
+		"/C/Proyectos_NodeJS/agenda_node_js/agenda/app.js",
+		"/C/Proyectos_NodeJS/agenda_node_js/agenda/routes/users.js",
+		"/C/Proyectos_NodeJS/agenda_node_js/agenda/routes/index.js",
+		"/C/Proyectos_NodeJS/agenda_node_js/agenda/bin/www",
+		"/C/Proyectos_NodeJS/version_node/server/vista/main.html",
+		"/C/Proyectos_NodeJS/version_node/server/vista/index.html",
+		"/D/Escritorio/Nueva carpeta/client/index.html",
+		"/D/Escritorio/Nueva carpeta/client/main.html",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DRa0.939/Evaluacion/client/main.html",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DRa0.104/codBase/client/index.html",
+		"/D/Escritorio/Nueva carpeta/client/css/styles.css",
+		"/D/Escritorio/Nueva carpeta/client/css/index.css",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DRa0.090/Evaluacion/client/index.html",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DRa0.086/Evaluacion/client/main.html",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DRa0.926/Evaluacion/client/index.html",
+		"/C/Proyectos_NodeJS/version_node/server/requestRouting.js",
+		"/D/Escritorio/CURSOS NEXTU/Curso - Desarrollo Web/Modulo Interactuando con Bases de Datos/Evaluacion/Version PHP/client/main.html",
+		"/C/Proyectos_NodeJS/version_node/server/crear_nuevo_usuario.js",
+		"/C/Proyectos_NodeJS/version_node/server/controlador/usuario.js",
+		"/C/Proyectos_NodeJS/version_node/client/css/styles.css",
+		"/C/Proyectos_NodeJS/version_node/client/css/index.css",
+		"/C/Proyectos_NodeJS/version_node/client/main.html",
+		"/C/Proyectos_NodeJS/version_node/client/index.html",
+		"/D/Escritorio/CURSOS NEXTU/Curso - Desarrollo Web/Modulo Interactuando con Bases de Datos/Evaluacion/Version PHP/client/index.html",
+		"/C/Proyectos_NodeJS/version_node/public/index.html",
+		"/C/Proyectos_NodeJS/version_node/server/crear_nuevo_usuario.html",
+		"/D/Escritorio/CURSOS NEXTU/Curso - Desarrollo Web/Modulo Interactuando con Bases de Datos/Evaluacion/Version PHP/client/js/index.js",
+		"/C/Proyectos_NodeJS/version_node/server/controlador/crear_nuevo_usuario.js",
+		"/C/Proyectos_NodeJS/version_node/server/modelo/usuario.js",
+		"/C/Proyectos_NodeJS/version_node/server/controlador/validacion.js",
+		"/C/Proyectos_NodeJS/version_node/server/controlador/servicio.js",
+		"/D/Escritorio/CURSOS NEXTU/Curso - Desarrollo Web/Modulo Interactuando con Bases de Datos/Evaluacion/Version Node.js/server/modelo/evento.js",
+		"/C/Proyectos_NodeJS/version_node/package.json",
+		"/C/Proyectos_NodeJS/version_node/server/Modelo/usuarios.js",
+		"/C/Proyectos_NodeJS/version_node/server/Controlador/usuarios.js",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.387/create_user - copia.php",
+		"/C/Proyectos_NodeJS/version_node/server/controller/usuarios.js",
+		"/C/Proyectos_NodeJS/ExpressServer/server/index.js",
+		"/C/Proyectos_NodeJS/ExpressServer/server/requestRouting.js",
+		"/C/Proyectos_NodeJS/SimpleServer/server/requestRouting.js",
+		"/C/Proyectos_NodeJS/version_node/package-lock.json",
+		"/D/Escritorio/CURSOS NEXTU/Curso - Desarrollo Web/Modulo BackEnd/UNIDAD 4 - NODE.js/Leccion 5/package.json",
+		"/C/Proyectos_NodeJS/version_node/server/storage/index.js",
+		"/C/Proyectos_NodeJS/api-rest/index.js",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.663/index.js",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.795/users.json",
+		"/C/Users/SERGIO/AppData/Local/Temp/Rar$DIa0.837/index.js",
+		"/C/Proyectos_NodeJS/Ejercicio/src/server/index.js",
+		"/C/Proyectos_NodeJS/Ejercicio/package.json"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"foo",
+			"Usuario",
+			"usuario",
+			"nuevoUsuario",
+			"Evento",
+			"evento",
+			"Evento",
+			"eve",
+			";",
+			"Eventos",
+			"rou",
+			"path",
+			"http",
+			"MongoClient",
+			"conn",
+			"demo",
+			"back",
+			")",
+			"\tfunction obtenerEventos(req, res) {\n",
+			"usuario",
+			"uti",
+			"che",
+			"tit",
+			"json",
+			"php",
+			".star",
+			"star",
+			"\n    ",
+			"require_once",
+			"']);",
+			"\n\t",
+			"conex",
+			"10",
+			"11",
+			"public",
+			"sqlDelete",
+			"{\n",
+			"alert",
+			"data",
+			"form",
+			"respuesta",
+			";\n",
+			"';*/\n",
+			"app",
+			"alert",
+			"{\n",
+			"php",
+			"response",
+			"sqlAgregar",
+			"consulta",
+			"cadena",
+			"identificador",
+			"img",
+			"btn-reinicio",
+			"ciu",
+			"tipo",
+			"vide",
+			"id=",
+			"\trequire('conexion.php');\n",
+			"men&",
+			"menú",
+			"menu",
+			"ú",
+			"í",
+			"ó",
+			"á",
+			"é",
+			"á",
+			"ó",
+			"ú",
+			"í",
+			"é",
+			"á",
+			"ó",
+			"ñ",
+			"ú",
+			"ó",
+			"í",
+			"á",
+			"é",
+			"ó",
+			"órequire_once('process_encodeHTML.php');",
+			"í",
+			"á",
+			"ó",
+			"á",
+			"ó",
+			"í",
+			"ó",
+			"á",
+			"ó",
+			"ñ",
+			"ú",
+			"ó",
+			"í",
+			"é",
+			"á",
+			"ó",
+			"í",
+			"é",
+			"á",
+			"ñ",
+			"ú",
+			"ó",
+			"í",
+			"é",
+			"md-",
+			"\"&",
+			"'",
+			"com",
+			"ó",
+			"í",
+			"é",
+			"á",
+			"ñ",
+			"ú",
+			"ó",
+			"í",
+			"é",
+			"á",
+			"&",
+			"ú",
+			"ó",
+			"í",
+			"é",
+			"á",
+			"ñ",
+			"cute"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Evento",
+			"evento",
+			"Usuario",
+			"usuario",
+			"Usuario",
+			"evento",
+			"Evento",
+			"private",
+			"respuestaJSON",
+			"respuesta",
+			"sqlInsert",
+			"sqlConsultar",
+			"sqlAgregar",
+			"this",
+			"a",
+			"&ntilde;",
+			"&oacute;",
+			"&iacute;",
+			"&aacute;",
+			"&eacute;",
+			"a",
+			"o",
+			"&uacute;",
+			"&oacute;",
+			"&iacute;",
+			"&eacute;",
+			"&aacute;",
+			"\"\\&",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ServidorTiendaWeb.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

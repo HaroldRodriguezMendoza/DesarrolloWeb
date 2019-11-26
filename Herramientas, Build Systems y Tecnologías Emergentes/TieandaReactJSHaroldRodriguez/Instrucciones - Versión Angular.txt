@@ -1,0 +1,28 @@
+Instrucciones para correr Sistema:
+**********************************
+
+
+1.- Instalar XAMPP y configurar servidor con usuario “root” sin clave. Seguidamente ejecutar los servicios  del Xampp.
+
+2.-Abrir PHPmyAdmin e importar la base de datos tienda_harold.sql
+
+3.- Instalar NodeJS y npm:
+	A.- Instalar Dependencias
+		npm i -S express
+		npm i -S body-parser
+		npm i -S mysql
+		npm i -S express-jwt
+		npm i -S jsonwebtoken 
+		npm i -S cors
+	B.- Ejecutar servicio desde dentro de la carpeta “server”: node index.js
+	C.- Está configurado para escuchar en el puerto: localhost:3000
+
+4.- Instalar Angular CLI y correr servicio desde dentro de la carpeta “client/tienda”.
+
+5.- Abrir en google chorme e ingresar en la barra de direcciones: http://localhost:4200/login
+
+6.- Acceso al sistema:
+	Usuario: hrodriguezmendoza@gmail.com
+	Clave: 123456
+
+	Importante: Se debe estar conectado a internet para importar los estilos de boostrap 4
